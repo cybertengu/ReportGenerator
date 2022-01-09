@@ -1,6 +1,13 @@
 import dearpygui.dearpygui as dpg
 from parseZoomFile import *
 
+# Ideas: 
+# - The UI is ugly at the moment. I could research the api to fix those up.
+# - Figure out to disable the submit button until three files are selected.
+# - When the window is showing, it is off-centered. I am guessing it is not dpi-aware.
+# - Inform the user if the file was successfully created.
+# - The generated report file name should be unique. Possibly use date time to create the file name.
+
 def callbackFile1(sender, app_data):
 	print("Sender: ", sender)
 	print("App Data: ", app_data)
